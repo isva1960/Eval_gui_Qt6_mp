@@ -10,9 +10,9 @@ from mpmath import mp
 import sys
 from PyQt6.QtWidgets import QPushButton
 from PyQt6.QtGui import QTextCursor
-from PyQt6.QtCore import QTranslator, QLibraryInfo, QtMsgType, QSettings, Qt
+from PyQt6.QtCore import QTranslator, QLibraryInfo, QSettings, Qt
 from functools import wraps
-from PyQt6 import QtCore, QtWidgets  # Для обработчика Qt сообщений
+from PyQt6 import QtWidgets  # Для обработчика Qt сообщений
 from register_resources_fun import register_resources
 from Eval_gui_Qt6_mp import Ui_MainWindow
 from Qt6_palette import BasePaletteManagerCombo, APP_STYLE
