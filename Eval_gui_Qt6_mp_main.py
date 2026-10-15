@@ -35,7 +35,6 @@ def decorator_direct_tg_function(func):
         else:
             res = func(x)
         return res
-
     return wrapper
 
 
@@ -49,7 +48,6 @@ def decorator_inverse_tg_function(func):
         else:
             res = func(*args)
         return res
-
     return wrapper
 
 
