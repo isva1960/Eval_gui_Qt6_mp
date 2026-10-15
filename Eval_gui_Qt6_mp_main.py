@@ -15,7 +15,7 @@ from functools import wraps
 from PyQt6 import QtWidgets  # Для обработчика Qt сообщений
 from register_resources_fun import register_resources
 from Eval_gui_Qt6_mp import Ui_MainWindow
-from Qt6_palette import BasePaletteManagerCombo, APP_STYLE
+from Qt6_palette_git import BasePaletteManagerCombo, APP_STYLE
 from Qt6_palette_colors import dict_colors
 
 mp.dps = 0
