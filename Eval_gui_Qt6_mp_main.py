@@ -20,30 +20,6 @@ from Qt6_palette import BasePaletteManagerCombo, APP_STYLE
 from Qt6_palette_colors import dict_colors
 
 
-def qt_message_handler(mode, _context, message):
-    # mode: тип сообщения (QtDebugMsg, QtInfoMsg, QtWarningMsg, QtCriticalMsg, QtFatalMsg)
-    # context: содержит информацию о файле, строке, функции
-    # message: сам текст
-    match mode:
-        case QtMsgType.QtInfoMsg:
-            mode = 'INFO'
-        case QtMsgType.QtWarningMsg:
-            mode = 'WARNING'
-        case QtMsgType.QtCriticalMsg:
-            mode = 'CRITICAL'
-        case QtMsgType.QtFatalMsg:
-            mode = 'FATAL'
-        case _:
-            mode = 'DEBUG'
-    print(f"Тип сообщения: {mode}\nQt Сообщение: {message}", file=sys.stderr)
-    # Можно изменить, убрав лишнее, например так:
-    # print(f"{message}",file=sys.stderr)
-    # Для избежания предупреждений IDE, параметр 'mode' необходимо переименовать в '_' или '_mode'
-    # и убрать команду match->case
-
-
-# Устанавливаем обработчик
-QtCore.qInstallMessageHandler(qt_message_handler)
 
 mp.dps = 0
 ORGANIZATION_NAME = "isva_company"
